@@ -545,7 +545,7 @@ class Users extends CI_Controller {
                     $data['sn_first'] = true;
                     $data['name'] = $fb_userdata['name'];
                     $data['email'] = $fb_userdata['email'];
-                    $data['avatar'] = 'http://graph.facebook.com/'.$fb_userdata['username'].'/picture';
+                    $data['avatar'] = 'http://graph.facebook.com/'.$fb_userdata['id'].'/picture';
                     
                     if(isset($fb_userdata['hometown']) && !empty($fb_userdata['hometown'])){
                         list($city) = explode(',', $fb_userdata['hometown']['name']); // city, country
