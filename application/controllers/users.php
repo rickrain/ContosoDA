@@ -605,7 +605,7 @@ class Users extends CI_Controller {
                     $userdata['username'] = $fb_userdata['name'];
                     $userdata['social_userid'] = $fb_userdata['id'];
                     $userdata['social_provider'] = self::FACEBOOK;
-                    $userdata['avatar'] = 'http://graph.facebook.com/'.$fb_userdata['username'].'/picture';
+                    $userdata['avatar'] = 'http://graph.facebook.com/'.$fb_userdata['id'].'/picture';
                     break;
 
                 case self::MICROSOFT:					
